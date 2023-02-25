@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import url from "./url";
 
 export async function IndexLoader(){
