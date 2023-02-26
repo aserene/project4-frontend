@@ -1,13 +1,13 @@
 import { Link, useLoaderData, Form} from "react-router-dom";
 const Show = (props) => {
     const post = useLoaderData()
-    return <div>
+    return <div className="display-card">
         <h1>{post.name}</h1>
         <h2>{post.description}</h2>
         <h2>{post.category}</h2>
         <h2>{post.price}</h2>
         <h2>{post.img}</h2>
-        <div>
+        <div className="update">
             <h2>Update Ware</h2>
             <Form action={`/update/${post.id}`} method="put">
             <label>Name of Item</label>

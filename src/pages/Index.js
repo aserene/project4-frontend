@@ -4,7 +4,7 @@ const Index = (props) => {
     const wares = useLoaderData()
     console.log("Wares", wares)
     return <>
-    <div>
+    <div className="post">
         <h2>Add Wares</h2>
         <Form action="/create" method="post">
             <label>Name of Item</label>
