@@ -11,8 +11,11 @@ const Index = (props) => {
             <input type="text" name="name" placeholder="Name"/>
             <label for="description">Description:</label>
             <textarea id="description" name="description" rows="5" cols="50"></textarea>
-            <input type="text" name="category" placeholder=""/>
+            <label>Category</label>
+            <input type="text" name="category" placeholder="Category"/>
+            <label>Price</label>
             <input type="text" name="price"/>
+            <label>Image Url</label>
             <input type="text" name="img" placeholder="https://"/>
             <button>Add Ware</button>
         </Form>
