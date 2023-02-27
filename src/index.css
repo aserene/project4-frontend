@@ -13,7 +13,7 @@ code {
     monospace;
 }
 .add-wares{
-  display: flex;
+  text-align: left;
 }
 .card-container{
   display: flex;
@@ -31,6 +31,7 @@ code {
   padding: 10px;
   margin-bottom: 10px;
 }
+
 .display-card img{
   height: 80%;
   max-width: 100%;
