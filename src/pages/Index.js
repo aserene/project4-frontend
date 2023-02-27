@@ -33,7 +33,8 @@ const Index = (props) => {
                 <input type="text" name="price"/><br/>
                 <label>Image Url</label><br/>
                 <input type="text" name="img" placeholder="https://"/>
-                <button>Add Ware</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </Form>
         </div>
         <div className="card-container">
