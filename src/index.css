@@ -16,6 +16,14 @@ code {
   margin: 2em;
   padding: 5px;
   border: 2px solid rgb(151, 215, 255);
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-wares button{
+  margin-left: 10px;
+}
+#add{
+  text-align: center;
 }
 .card-container{
   display: flex;
@@ -32,6 +40,7 @@ code {
   background-color: white;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 2px;
 }
 
 .display-card img{

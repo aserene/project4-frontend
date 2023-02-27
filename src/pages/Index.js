@@ -6,9 +6,9 @@ const Index = (props) => {
     console.log("Wares", wares)
     return <>
     <div className="container">
-        Header
+        {Header()}
         <div className="add-wares">
-            <h2>Add Wares</h2>
+            <h2 id="add">Add Wares</h2>
             <Form action="/create" method="post">
                 <label>Name of Item</label><br/>
                 <input type="text" name="name" placeholder="Name"/><br/>
