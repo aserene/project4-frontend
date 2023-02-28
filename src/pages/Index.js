@@ -1,19 +1,21 @@
 import { useLoaderData, Form } from "react-router-dom"
 import Header from "../components/Header"
 import Item from "../components/Item"
+import Sidepanel from "../components/Sidepanel"
 const Index = (props) => {
     const wares = useLoaderData()
     console.log("Wares", wares)
     return <>
     <div className="container">
         {Header()}
-        <div className="add-wares">
+        {Sidepanel()}
+        {/* <div className="add-wares">
             <h2 id="add">Add Wares</h2>
             <Form action="/create" method="post">
                 <label>Name of Item</label><br/>
                 <input type="text" name="name" placeholder="Name"/><br/>
                 <label for="description">Description:</label><br/>
-                <textarea id="description" name="description" rows="5" cols="50"></textarea><br/>
+                <textarea id="description" name="description" rows="5" cols="20"></textarea><br/>
                 <label for="category">Choose a Category:</label><br/>
                 <select id="category" name="category">
                 <option value="clothing">Clothing</option>
@@ -36,7 +38,7 @@ const Index = (props) => {
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
             </Form>
-        </div>
+        </div> */}
         <div className="card-container">
             {wares.map(item => <Item key={item.id} item={item}/>)}
         </div>
