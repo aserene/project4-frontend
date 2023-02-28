@@ -8,12 +8,21 @@ const Show = (props) => {
         {Header()}
         {Nav()}
         <div className="show-display-card">
-            <img src={item.img} alt={item.name}/>
-            <h1>{item.name}</h1>
-            <h2>{item.description}</h2>
-            <h2>{item.category}</h2>
-            <h2>{`$${item.price}`}</h2>
-            <div className="update">
+            <div id="show-img">
+                <img src={item.img} alt={item.name}/>
+            </div>
+            <div id="item-details">
+                <h1>{item.name}</h1>
+                <h4>{item.description}</h4>
+                <h4>{`Category: ${item.category}`}</h4>
+                <h4>{`$${item.price}`}</h4>
+                <button id="add-btn">Add to Cart</button><br/>
+                <button id="save-btn">Save for later</button><br/>
+                <button id="update-btn" a href="/update">Update Item</button>
+
+            </div>
+        </div>
+            {/* <div className="update">
                 <h2>Update Item</h2>
                 <Form action={`/update/${item.id}`} method="put">
                 <label>Name of Item</label>
@@ -31,11 +40,7 @@ const Show = (props) => {
                 <Form action={`/delete/${item.id}`} method="post">
                 <button>Delete</button>
                 </Form>
-            </div>
-            <Link to="/">
-                <button>Home</button>
-            </Link>
-        </div>
+            </div> */}
         </div>
     </>
 }

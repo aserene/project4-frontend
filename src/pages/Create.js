@@ -10,7 +10,7 @@ const Create = () => {
             <h2 id="add">Add Wares</h2>
             <Form action="/create" method="post">
                 <label>Name of Item</label><br/>
-                <input type="text" name="name" placeholder="Name"/><br/>
+                <input className="input-field"type="text" name="name"/><br/>
                 <label for="description">Description:</label><br/>
                 <textarea id="description" name="description" rows="5" cols="20"></textarea><br/>
                 <label for="category">Choose a Category:</label><br/>
@@ -27,13 +27,13 @@ const Create = () => {
                 <option value="food & grocery">Food & Grocery</option>
                 <option value="beauty & health">Beauty & Health</option>
                 <option value="automotive & industrial">Automotive & Industrial</option>
-                </select>
-                <label>Price</label>
-                <input type="text" name="price"/><br/>
+                </select><br/>
+                <label>Price</label><br/>
+                <input className="input-field"type="text" name="price"/><br/>
                 <label>Image Url</label><br/>
-                <input type="text" name="img" placeholder="https://"/>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
+                <input className="input-field"type="text" name="img" placeholder="https://"/><br/>
+                <button id="submit-btn"type="submit">Submit</button>
+                <button id="reset-btn"type="reset">Reset</button>
             </Form>
         </div>
     </>
