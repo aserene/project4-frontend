@@ -15,6 +15,21 @@ code {
   background-color: #13293D;
   color: white;
 }
+.nav{
+  background-color: #dadada;
+  text-align: left;
+  height: 2em;
+  padding: 1px;
+}
+.nav a{
+  text-decoration: none;
+  color: black;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.nav a:hover{
+  border: 1px solid white;
+}
 .add-wares{
   width: 35%;
   text-align: left;
@@ -105,7 +120,6 @@ code {
   color: white;
   padding: 10px 15px;
   border: none;
-  float: right;
   border-radius: 2px;
 }
 

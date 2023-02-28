@@ -1,6 +1,7 @@
 import { useLoaderData, Form } from "react-router-dom"
 import Header from "../components/Header"
 import Item from "../components/Item"
+import Nav from "../components/Nav"
 import Sidepanel from "../components/Sidepanel"
 const Index = (props) => {
     const wares = useLoaderData()
@@ -8,6 +9,7 @@ const Index = (props) => {
     return <>
     <div className="container">
         {Header()}
+        {Nav()}
         {Sidepanel()}
         {/* <div className="add-wares">
             <h2 id="add">Add Wares</h2>

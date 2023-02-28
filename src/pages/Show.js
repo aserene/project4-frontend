@@ -1,10 +1,12 @@
 import { Link, useLoaderData, Form} from "react-router-dom";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 const Show = (props) => {
     const item = useLoaderData()
     return <>
-    <div>
-    
+    <div className="show-container">
+        {Header()}
+        {Nav()}
         <div className="show-display-card">
             <h1>{item.name}</h1>
             <h2>{item.description}</h2>
