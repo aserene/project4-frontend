@@ -8,11 +8,11 @@ const Show = (props) => {
         {Header()}
         {Nav()}
         <div className="show-display-card">
+            <img src={item.img} alt={item.name}/>
             <h1>{item.name}</h1>
             <h2>{item.description}</h2>
             <h2>{item.category}</h2>
             <h2>{`$${item.price}`}</h2>
-            <img src={item.img} alt={`Picture of ${item.name}`}/>
             <div className="update">
                 <h2>Update Item</h2>
                 <Form action={`/update/${item.id}`} method="put">

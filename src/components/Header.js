@@ -8,7 +8,7 @@ const Header = () => {
         <button className="search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       </div>
-      <a href="">Log In</a>
+      <a href="/login" id="login">Log In</a>
       <button className="cart-icon" type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
       
     </div>
