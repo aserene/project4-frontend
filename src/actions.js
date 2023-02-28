@@ -4,7 +4,7 @@ import { redirect } from "react-router-dom";
 export async function CreateAction({request}){
     //get form data
     const formData= await request.formData()
-    // construct new todo
+    // construct new ware
     const newWare= {
         name: formData.get("name"),
         description: formData.get("description"),
