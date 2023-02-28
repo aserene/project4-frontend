@@ -18,29 +18,41 @@ const Show = (props) => {
                 <h4>{`$${item.price}`}</h4>
                 <button id="add-btn">Add to Cart</button><br/>
                 <button id="save-btn">Save for later</button><br/>
-                <button id="update-btn" a href="/update">Update Item</button>
 
             </div>
         </div>
-            {/* <div className="update">
-                <h2>Update Item</h2>
-                <Form action={`/update/${item.id}`} method="put">
-                <label>Name of Item</label>
-                <input type="text" name="name" defaultValue={item.name}/>
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" rows="5" cols="50" defaultValue={item.description}></textarea>
-                <label>Category</label>
-                <input type="text" name="category" defaultValue={item.category}/>
-                <label>Price</label>
-                <input type="text" name="price" defaultValue={item.price}/>
-                <label>Image Url</label>
-                <input type="text" name="img" defaultValue={item.img}/>
-                <button>Update</button>
+            <div className="update-cont">
+                <h2 id="update-header">Update Item</h2>
+                <Form id="update-form" action={`/update/${item.id}`} method="put">
+                <label>Name of Item</label><br/>
+                <input type="text" name="name" defaultValue={item.name}/><br/>
+                <label for="description">Description:</label><br/>
+                <textarea id="update-description" name="description" rows="5" cols="50" defaultValue={item.description}></textarea><br/>
+                <label for="category">Choose a Category:</label><br/>
+                <select id="category" name="category">
+                <option value="clothing">Clothing</option>
+                <option value="shoes">Shoes</option>
+                <option value="jewlry">Jewelry</option>
+                <option value="toys">Toys</option>
+                <option value="kitchen">Kitchen</option>
+                <option value="games & electronics">Games & Electronics</option>
+                <option value="hardware">Hardware</option>
+                <option value="accessories">Accessories</option>
+                <option value="pet supplies">Pet Supplies</option>
+                <option value="food & grocery">Food & Grocery</option>
+                <option value="beauty & health">Beauty & Health</option>
+                <option value="automotive & industrial">Automotive & Industrial</option>
+                </select><br/>
+                <label>Price</label><br/>
+                <input type="text" name="price" defaultValue={item.price}/><br/>
+                <label>Image Url</label><br/>
+                <input type="text" name="img" defaultValue={item.img}/><br/>
+                <button id="update-btn">Update</button>
                 </Form>
                 <Form action={`/delete/${item.id}`} method="post">
-                <button>Delete</button>
+                <button id="delete-btn">Delete</button>
                 </Form>
-            </div> */}
+            </div>
         </div>
     </>
 }

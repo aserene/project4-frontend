@@ -5,7 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -186,19 +185,62 @@ code {
   text-align:left;
   padding: 1em;
 }
-#add-btn, #save-btn, #update-btn{
+.update-cont{
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:70vw;
+  margin: auto;
+}
+#update-form input[type=text]{
+  width: 60%;
+  font-family: 'Quicksand', 'sans-serif';
+}
+#update-description{
+  width: 60%;
+  font-family: 'Quicksand', 'sans-serif';
+}
+#update-header{
+  margin: 1em;
+  padding: 1em;
+}
+#update-btn, #delete-btn{
+  width: 20%;
+  height: 2em;
+  margin: .5em;
+}
+#update-btn{
+  border: 2px solid rgb(57, 199, 255);
+  border-radius: 2px;
+  background-color: rgb(57, 199, 255);
+  color:white;
+}
+#update-btn:hover{
+  background-color: white;
+  color:rgb(57, 199, 255)
+}
+#delete-btn{
+  border: 2px solid rgb(191, 0, 0);
+  border-radius: 2px;
+  background-color: rgb(191, 0, 0);
+  color: white
+}
+#delete-btn:hover{
+  background-color: white;
+  color: rgb(191, 0, 0)
+}
+#add-btn, #save-btn{
   margin-left: 3em;
 }
 #add-btn{
-  border: 2px solid rgb(0, 149, 255);
+  border: 2px solid orange;
   border-radius: 2px;
-  background-color: white;
-  color: rgb(0, 149, 255);
+  background-color: orange;
+  color: white;
   width: 70%;
 }
 #add-btn:hover{
-  border: 2px solid rgb(57, 199, 255);
-  color:rgb(57,199,255);
+  background-color: white;
+  color:orange;
 }
 #save-btn{
   border: 2px solid #13293D;
@@ -210,15 +252,4 @@ code {
 #save-btn:hover{
   background-color: white;
   color: #13293D;
-}
-#update-btn{
-  border: 2px solid orange;
-  border-radius: 2px;
-  color: black;
-  background-color: orange;
-  width: 70%;
-}
-#update-btn:hover{
-  background-color: white;
-  color: orange;
 }
